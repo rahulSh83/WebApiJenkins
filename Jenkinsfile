@@ -3,7 +3,7 @@ pipeline {
     environment {
         AZURE_CREDENTIALS_ID = 'azure-service-principal'
         RESOURCE_GROUP = 'MyResourceGroup'
-        APP_SERVICE_NAME = 'rahulapp1'
+        APP_SERVICE_NAME = 'ASP-MyResourceGroup-a57d'
     }
 
     stages {
