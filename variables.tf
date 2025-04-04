@@ -19,25 +19,25 @@ variable "subscription_id" {
 }
 
 variable "resource_group_name" {
-  default = "myGitDeployRG"
+  description = "Name of the resource group"
+  type        = string
+  default     = "jenkins-rahul-rg"
 }
 
 variable "location" {
-  default = "East US"
+  description = "Azure region"
+  type        = string
+  default     = "East US"
 }
 
 variable "app_service_plan_name" {
-  default = "myGitDeployPlan"
+  description = "App Service Plan name"
+  type        = string
+  default     = "jenkins-rahul-plan"
 }
 
 variable "app_service_name" {
-  default = "my-git-deploy-app"
-}
-
-variable "repo_url" {
-  default = "https://github.com/rahulSh83/WebApiJenkins"
-}
-
-variable "branch" {
-  default = "master"
+  description = "App Service (Web App) name"
+  type        = string
+  default     = "jenkins-rahul-app123"
 }
