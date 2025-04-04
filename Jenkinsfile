@@ -17,7 +17,8 @@ pipeline {
             steps {
                 bat 'dotnet restore'
                 bat 'dotnet build --configuration Release'
-                bat 'dotnet publish -c Release -o ./publish'
+                bat 'dotnet publish WebApiJenkins/WebApiJenkins.csproj -c Release -o ./publish'
+
             }
         }
 
