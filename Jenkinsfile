@@ -1,9 +1,9 @@
 pipeline {
     agent any
     environment {
-        AZURE_CREDENTIALS_ID = 'jenkins-pipeline-sp'
-        RESOURCE_GROUP = 'MyResourceGroup'
-        APP_SERVICE_NAME = 'rahulapp1'
+        AZURE_CREDENTIALS_ID = 'jenkins-pipeline-sp1'
+        RESOURCE_GROUP = 'myAppServiceResourceGroup2'
+        APP_SERVICE_NAME = 'rahul2-terraform-appservice'
     }
 
     stages {
